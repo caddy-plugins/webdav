@@ -137,7 +137,7 @@ func parse(c *caddy.Controller) ([]*config, error) {
 					case `+w`:
 						rule.Modify = true
 					case `-w`:
-						rule.Modify = true
+						rule.Modify = false
 					}
 				}
 				u.Rules = append(u.Rules, rule)
