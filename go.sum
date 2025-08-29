@@ -2,8 +2,8 @@ gitee.com/admpub/certmagic v0.8.9 h1:aEpSOk9h45qn0RZDkMwvC+x69zwZLCSnEd8GAUBZTTs
 gitee.com/admpub/certmagic v0.8.9/go.mod h1:wuGbzPShFnEUp02FKFkjyD4lBKR1YkXroFC19/60jG8=
 github.com/admpub/caddy v1.2.9 h1:KxwlVs4QS8zhxLOH60psnEreIjbEiw6tWGFp9HXQWd4=
 github.com/admpub/caddy v1.2.9/go.mod h1:ifhbESzsEgUEO0bilttWLZe/EJ3etdt7NAGnDoWIAtk=
-github.com/admpub/webdav/v4 v4.1.4 h1:w4FWlEelPbkzKPUJ3gOcMKBgLEMmpmeWaK+b68+EjEQ=
-github.com/admpub/webdav/v4 v4.1.4/go.mod h1:vt9GdSgAlgawXdQpI9uH/zaIOwr7odfTK1pzuuep/pw=
+github.com/admpub/webdav/v4 v4.1.5 h1:Y/jv5dT4EPrpfZSIsan9URvH6eZ6NjMrhFAa1rhluPg=
+github.com/admpub/webdav/v4 v4.1.5/go.mod h1:vt9GdSgAlgawXdQpI9uH/zaIOwr7odfTK1pzuuep/pw=
 github.com/cenkalti/backoff/v4 v4.3.0 h1:MyRJ/UdXutAwSAT+s3wNd7MfTIcy71VQueUuFK343L8=
 github.com/cenkalti/backoff/v4 v4.3.0/go.mod h1:Y3VNntkOUPxTVeUxJ/G5vcM//AlwfmyYozVcomhLiZE=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
