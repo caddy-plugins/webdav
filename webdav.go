@@ -108,6 +108,12 @@ func parse(c *caddy.Controller) ([]*config, error) {
 
 		if len(args) > 0 {
 			conf.baseURL = args[0]
+			conf.baseURL = strings.TrimSuffix(conf.baseURL, "/")
+			conf.baseURL = strings.TrimPrefix(conf.baseURL, "/")
+			conf.baseURL = "/" + conf.baseURL
+		}
+		if conf.baseURL == "/" {
+			conf.baseURL = ""
 		}
 
 		if len(args) > 1 {
@@ -115,14 +121,6 @@ func parse(c *caddy.Controller) ([]*config, error) {
 				k := `arg` + strconv.Itoa(i)
 				conf.options[k] = v
 			}
-		}
-
-		conf.baseURL = strings.TrimSuffix(conf.baseURL, "/")
-		conf.baseURL = strings.TrimPrefix(conf.baseURL, "/")
-		conf.baseURL = "/" + conf.baseURL
-
-		if conf.baseURL == "/" {
-			conf.baseURL = ""
 		}
 
 		u := conf.User
