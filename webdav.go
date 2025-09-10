@@ -200,6 +200,7 @@ func parse(c *caddy.Controller) ([]*config, error) {
 				}
 
 				conf.Users[val] = &lib.User{
+					Global:  conf.User,
 					Rules:   conf.Rules,
 					Scope:   conf.Scope,
 					Modify:  conf.Modify,

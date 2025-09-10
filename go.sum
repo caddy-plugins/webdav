@@ -2,8 +2,10 @@ gitee.com/admpub/certmagic v0.8.9 h1:aEpSOk9h45qn0RZDkMwvC+x69zwZLCSnEd8GAUBZTTs
 gitee.com/admpub/certmagic v0.8.9/go.mod h1:wuGbzPShFnEUp02FKFkjyD4lBKR1YkXroFC19/60jG8=
 github.com/admpub/caddy v1.2.9 h1:KxwlVs4QS8zhxLOH60psnEreIjbEiw6tWGFp9HXQWd4=
 github.com/admpub/caddy v1.2.9/go.mod h1:ifhbESzsEgUEO0bilttWLZe/EJ3etdt7NAGnDoWIAtk=
-github.com/admpub/webdav/v4 v4.1.5 h1:Y/jv5dT4EPrpfZSIsan9URvH6eZ6NjMrhFAa1rhluPg=
-github.com/admpub/webdav/v4 v4.1.5/go.mod h1:vt9GdSgAlgawXdQpI9uH/zaIOwr7odfTK1pzuuep/pw=
+github.com/admpub/pp v0.0.7 h1:nIWtBf0ohTBaYH+nB25mGsUd3OR5x+4PHHzln3TIgVE=
+github.com/admpub/pp v0.0.7/go.mod h1:6wSDZgDpuysnqYKffOz0KajEg8q/k+CVZ+PnHKyR1yI=
+github.com/admpub/webdav/v4 v4.1.6 h1:j+vE/t0eWydsjVyouYOYNELswEI7pjVJF/apjnqvwFQ=
+github.com/admpub/webdav/v4 v4.1.6/go.mod h1:604uB59YrdtaLTs0ninrA11gOmaKfQpI1WZtFJa6PRU=
 github.com/cenkalti/backoff/v4 v4.3.0 h1:MyRJ/UdXutAwSAT+s3wNd7MfTIcy71VQueUuFK343L8=
 github.com/cenkalti/backoff/v4 v4.3.0/go.mod h1:Y3VNntkOUPxTVeUxJ/G5vcM//AlwfmyYozVcomhLiZE=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
@@ -22,6 +24,10 @@ github.com/hashicorp/go-syslog v1.0.0 h1:KaodqZuhUoZereWVIYmpUgZysurB1kBLX2j0MwM
 github.com/hashicorp/go-syslog v1.0.0/go.mod h1:qPfqrKkXGihmCqbJM2mZgkZGvKG1dFdvsLplgctolz4=
 github.com/klauspost/cpuid v1.3.1 h1:5JNjFYYQrZeKRJ0734q51WCEEn2huer72Dc7K+R/b6s=
 github.com/klauspost/cpuid v1.3.1/go.mod h1:bYW4mA6ZgKPob1/Dlai2LviZJO7KGI3uoWLd42rAQw4=
+github.com/mattn/go-colorable v0.1.13 h1:fFA4WZxdEF4tXPZVKMLwD8oUnCTTo08duU7wxecdEvA=
+github.com/mattn/go-colorable v0.1.13/go.mod h1:7S9/ev0klgBDR4GtXTXX8a3vIGJpMovkB8vQcUbaXHg=
+github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
+github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
 github.com/miekg/dns v1.1.68 h1:jsSRkNozw7G/mnmXULynzMNIsgY2dHC8LO6U6Ij2JEA=
 github.com/miekg/dns v1.1.68/go.mod h1:fujopn7TB3Pu3JM69XaawiU0wqjpL9/8xGop5UrTPps=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
