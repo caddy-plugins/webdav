@@ -56,6 +56,18 @@ type config struct {
 	options map[string]string
 }
 
+func (c *config) SetBaseURL(baseURL string) *config {
+	c.baseURL = baseURL
+	if !strings.HasPrefix(c.baseURL, "/") {
+		c.baseURL = "/" + c.baseURL
+	}
+	c.baseURL = strings.TrimSuffix(c.baseURL, "/")
+	if c.baseURL == "/" {
+		c.baseURL = ""
+	}
+	return c
+}
+
 // ServeHTTP determines if the request is for this plugin, and if all prerequisites are met.
 func (d WebDav) ServeHTTP(w http.ResponseWriter, r *http.Request) (int, error) {
 	for i := range d.Configs {
@@ -90,7 +102,7 @@ func parse(c *caddy.Controller) ([]*config, error) {
 
 	for c.Next() {
 		conf := &config{
-			baseURL: "/",
+			baseURL: "",
 			options: map[string]string{},
 			Config: &lib.Config{
 				Auth:    false, // Must use basicauth directive for this.
@@ -105,18 +117,9 @@ func parse(c *caddy.Controller) ([]*config, error) {
 		}
 
 		args := c.RemainingArgs()
-
 		if len(args) > 0 {
-			conf.baseURL = args[0]
-			if !strings.HasPrefix(conf.baseURL, "/") {
-				conf.baseURL = "/" + conf.baseURL
-			}
-			conf.baseURL = strings.TrimSuffix(conf.baseURL, "/")
+			conf.SetBaseURL(args[0])
 		}
-		if conf.baseURL == "/" {
-			conf.baseURL = ""
-		}
-
 		if len(args) > 1 {
 			for i, v := range args[1:] {
 				k := `arg` + strconv.Itoa(i)
