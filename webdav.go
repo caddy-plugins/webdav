@@ -111,6 +111,7 @@ func parse(c *caddy.Controller) ([]*config, error) {
 			if !strings.HasPrefix(conf.baseURL, "/") {
 				conf.baseURL = "/" + conf.baseURL
 			}
+			conf.baseURL = strings.TrimSuffix(conf.baseURL, "/")
 		}
 		if conf.baseURL == "/" {
 			conf.baseURL = ""
