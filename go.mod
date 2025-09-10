@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/admpub/caddy v1.2.9
-	github.com/admpub/webdav/v4 v4.1.6
+	github.com/admpub/webdav/v4 v4.1.7
 	golang.org/x/net v0.43.0
 )
 
